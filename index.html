@@ -13,36 +13,36 @@
 <body>
     <div id="main" class="container">
         <div class="calculator row">
-            <div id="result-display" class="result-display"><span class="result-num">0</span></div>
+            <div id="result-display" class="result-display" data-display-values="0"><span class="result-num initial-value">0</span></div>
             <div id="calculator-buttons">
                 <div class="first-btn-row">
-                    <span class="ac-btn btn btn-outline-none"><i class="fa-solid fa-a"></i><i class="fa-solid fa-c"></i></span>
-                    <span class="percentage-btn btn btn-outline-none"><i class="fa-solid fa-percent"></i></span>
-                    <span class="cancel-btn btn btn-outline-none"><i class="fa-solid fa-arrow-left"></i></span>
-                    <span class="divide-btn btn btn-outline-none"><i class="fa-solid fa-divide" style="color: #e6e7eb;"></i></span>
+                    <span class="ac-btn btn btn-outline-none clear-result" data-value="ac"><i class="fa-solid fa-a"></i><i class="fa-solid fa-c"></i></span>
+                    <span class="percentage-btn btn btn-outline-none value operator" data-value="%"><i class="fa-solid fa-percent"></i></span>
+                    <span class="cancel-btn btn btn-outline-none trim-result" data-value="back-space"><i class="fa-solid fa-arrow-left"></i></span>
+                    <span class="divide-btn btn btn-outline-none value operator" data-value="/"><i class="fa-solid fa-divide" style="color: #e6e7eb;"></i></span>
                 </div>
                 <div class="second-btn-row">
-                    <span class="seven-btn btn btn-outline-none num"><i class="fa-solid fa-7" style="color: #e6e7eb;"></i></span>
-                    <span class="eight-btn btn btn-outline-none num"><i class="fa-solid fa-8" style="color: #e6e7eb;"></i></span>
-                    <span class="nine-btn btn btn-outline-none num"><i class="fa-solid fa-9" style="color: #e6e7eb;"></i></span>
-                    <span class="multiply-btn btn btn-outline-none"><i class="fa-solid fa-xmark" style="color: #e6e7eb;"></i></span>
+                    <span class="seven-btn btn btn-outline-none value operand" data-value="7"><i class="fa-solid fa-7" style="color: #e6e7eb;"></i></span>
+                    <span class="eight-btn btn btn-outline-none value operand" data-value="8"><i class="fa-solid fa-8" style="color: #e6e7eb;"></i></span>
+                    <span class="nine-btn btn btn-outline-none value operand" data-value="9"><i class="fa-solid fa-9" style="color: #e6e7eb;"></i></span>
+                    <span class="multiply-btn btn btn-outline-none value operator" data-value="*"><i class="fa-solid fa-xmark" style="color: #e6e7eb;"></i></span>
                 </div>
                 <div class="third-btn-row">
-                    <span class="four-btn btn btn-outline-none num"><i class="fa-solid fa-4" style="color: #e6e7eb;"></i></span>
-                    <span class="five-btn btn btn-outline-none num"><i class="fa-solid fa-5" style="color: #e6e7eb;"></i></span>
-                    <span class="six-btn btn btn-outline-none num"><i class="fa-solid fa-6" style="color: #e6e7eb;"></i></span>
-                    <span class="minus-btn btn btn-outline-none"><i class="fa-solid fa-minus" style="color: #e6e7eb;"></i></span>
+                    <span class="four-btn btn btn-outline-none value operand" data-value="4"><i class="fa-solid fa-4" style="color: #e6e7eb;"></i></span>
+                    <span class="five-btn btn btn-outline-none value operand" data-value="5"><i class="fa-solid fa-5" style="color: #e6e7eb;"></i></span>
+                    <span class="six-btn btn btn-outline-none value operand" data-value="6"><i class="fa-solid fa-6" style="color: #e6e7eb;"></i></span>
+                    <span class="minus-btn btn btn-outline-none value operator" data-value="-"><i class="fa-solid fa-minus" style="color: #e6e7eb;"></i></span>
                 </div>
                 <div class="fourth-btn-row">
-                    <span class="one-btn btn btn-outline-none num"><i class="fa-solid fa-1" style="color: #e6e7eb;"></i></span>
-                    <span class="two-btn btn btn-outline-none num"><i class="fa-solid fa-2" style="color: #e6e7eb;"></i></span>
-                    <span class="three-btn btn btn-outline-none num"><i class="fa-solid fa-3" style="color: #e6e7eb;"></i></span>
-                    <span class="plus-btn btn btn-outline-none"><i class="fa-solid fa-plus" style="color: #e6e7eb;"></i></span>
+                    <span class="one-btn btn btn-outline-none value operand" data-value="1"><i class="fa-solid fa-1" style="color: #e6e7eb;"></i></span>
+                    <span class="two-btn btn btn-outline-none value operand" data-value="2"><i class="fa-solid fa-2" style="color: #e6e7eb;"></i></span>
+                    <span class="three-btn btn btn-outline-none value operand" data-value="3"><i class="fa-solid fa-3" style="color: #e6e7eb;"></i></span>
+                    <span class="plus-btn btn btn-outline-none value operator" data-value="+"><i class="fa-solid fa-plus" style="color: #e6e7eb;"></i></span>
                 </div>
                 <div class="fifth-btn-row">
-                    <span class="zero-btn btn btn-outline-none num"><i class="fa-solid fa-0" style="color: #e6e7eb;"></i></span>
-                    <span class="dot-btn btn btn-outline-none num"><i class="fa-solid fa-circle fa-2xs" style="color: #e6e7eb;"></i></span>
-                    <span class="equal-btn btn btn-outline-none"><i class="fa-solid fa-equals" style="color: #e6e7eb;"></i></span>
+                    <span class="zero-btn btn btn-outline-none value operand" data-value="0"><i class="fa-solid fa-0" style="color: #e6e7eb;"></i></span>
+                    <span class="dot-btn btn btn-outline-none dot value operator" data-value="."><i class="fa-solid fa-circle fa-2xs" style="color: #e6e7eb;"></i></span>
+                    <span class="equal-btn btn btn-outline-none show-result" data-value="="><i class="fa-solid fa-equals" style="color: #e6e7eb;"></i></span>
                 </div>
             </div>
         </div>
