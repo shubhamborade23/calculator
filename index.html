@@ -7,11 +7,51 @@
     <title>Calculator</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/asset/css/main.css">
 </head>
 <body>
+    <div id="main" class="container">
+        <div class="calculator row">
+            <div id="result-display" class="result-display"><span class="result-num">0</span></div>
+            <div id="calculator-buttons">
+                <div class="first-btn-row">
+                    <span class="ac-btn btn btn-outline-none"><i class="fa-solid fa-a"></i><i class="fa-solid fa-c"></i></span>
+                    <span class="percentage-btn btn btn-outline-none"><i class="fa-solid fa-percent"></i></span>
+                    <span class="cancel-btn btn btn-outline-none"><i class="fa-solid fa-arrow-left"></i></span>
+                    <span class="divide-btn btn btn-outline-none"><i class="fa-solid fa-divide" style="color: #e6e7eb;"></i></span>
+                </div>
+                <div class="second-btn-row">
+                    <span class="seven-btn btn btn-outline-none num"><i class="fa-solid fa-7" style="color: #e6e7eb;"></i></span>
+                    <span class="eight-btn btn btn-outline-none num"><i class="fa-solid fa-8" style="color: #e6e7eb;"></i></span>
+                    <span class="nine-btn btn btn-outline-none num"><i class="fa-solid fa-9" style="color: #e6e7eb;"></i></span>
+                    <span class="multiply-btn btn btn-outline-none"><i class="fa-solid fa-xmark" style="color: #e6e7eb;"></i></span>
+                </div>
+                <div class="third-btn-row">
+                    <span class="four-btn btn btn-outline-none num"><i class="fa-solid fa-4" style="color: #e6e7eb;"></i></span>
+                    <span class="five-btn btn btn-outline-none num"><i class="fa-solid fa-5" style="color: #e6e7eb;"></i></span>
+                    <span class="six-btn btn btn-outline-none num"><i class="fa-solid fa-6" style="color: #e6e7eb;"></i></span>
+                    <span class="minus-btn btn btn-outline-none"><i class="fa-solid fa-minus" style="color: #e6e7eb;"></i></span>
+                </div>
+                <div class="fourth-btn-row">
+                    <span class="one-btn btn btn-outline-none num"><i class="fa-solid fa-1" style="color: #e6e7eb;"></i></span>
+                    <span class="two-btn btn btn-outline-none num"><i class="fa-solid fa-2" style="color: #e6e7eb;"></i></span>
+                    <span class="three-btn btn btn-outline-none num"><i class="fa-solid fa-3" style="color: #e6e7eb;"></i></span>
+                    <span class="plus-btn btn btn-outline-none"><i class="fa-solid fa-plus" style="color: #e6e7eb;"></i></span>
+                </div>
+                <div class="fifth-btn-row">
+                    <span class="zero-btn btn btn-outline-none num"><i class="fa-solid fa-0" style="color: #e6e7eb;"></i></span>
+                    <span class="dot-btn btn btn-outline-none num"><i class="fa-solid fa-circle fa-2xs" style="color: #e6e7eb;"></i></span>
+                    <span class="equal-btn btn btn-outline-none"><i class="fa-solid fa-equals" style="color: #e6e7eb;"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/asset/script/main.js"></script>
 </body>
 </html>
