@@ -75,6 +75,6 @@ body {
     border: none;
 }
 
-.btn.num {
+.btn.operand, .btn.dot {
     background: #485460;
 }
