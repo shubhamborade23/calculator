@@ -1,80 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    border: 0;
+    margin: 0;
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#calculator-buttons {
-    text-align: center;
-}
-
-.calculator {
-    width: 29%;
-    margin: 0 auto;
-    background-color: #1e272e;
-    padding: 0 0 35px 0;
-    border-radius: 15px;
-}
-
-.result-display {
-    height: 115px;
-    margin: 15px;
-    width: 91%;
+    min-height: 100vh;
+    background: black;
     display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    font-size: 1.5rem;
+    color: #f8f8f8;
 }
 
-.result-display .result-num {
-    font-size: 5vw;
-    color: #d2dae2;
+::selection {
+    background: transparent;
+}
+
+.row {
+    display: flex;
+}
+
+.light-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a6a6a6;
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    margin: .4rem;
+    cursor: pointer;
+    color: black;
+}
+
+.dark-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    margin: .4rem;
+    cursor: pointer;
+}
+
+.yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9501;
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    margin: .4rem;
+    cursor: pointer;
+}
+
+#zero {
+    width: 9.2rem;
+    border-radius: 0 50px 50px 0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.display-font {
+    font-size: 3rem;
+}
+
+.display-cover {
+    width: 19.2rem;
+    height: 3rem;
+    margin: 0 .4rem 2rem .4rem;
+    text-align: right;
+    font-size: 100%;
+    white-space: nowrap;
+}
+
+.display {
+    font-size: 100%;
     display: inline-block;
-    word-wrap: break-word;
-    overflow: auto;
 }
 
-#calculator-buttons span.btn {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
+.output-font {
+    font-size: 2rem;
+}
+
+.output-cover {
+    width: 19.2rem;
+    height: 2rem;
+    margin: 0 .4rem 2rem .4rem;
+    text-align: right;
+    font-size: 100%;
+    white-space: nowrap;
+}
+
+.output {
+    font-size: 100%;
     display: inline-block;
-    margin: 5px;
-    padding-top: 20px;
 }
 
-#calculator-buttons span.btn.zero-btn {
-    width: 134px;
-    border-radius: 54px;
-}
-
-.divide-btn, .divide-btn:hover, 
-.multiply-btn, .multiply-btn:hover, 
-.minus-btn, .minus-btn:hover, 
-.plus-btn, .plus-btn:hover, 
-.equal-btn, .equal-btn:hover {
-    background: #ffa801;
-}
-
-.first-btn-row .cancel-btn,
-.first-btn-row .percentage-btn,
-.first-btn-row .ac-btn {
-    background-color: #d2dae2;
-    color: #1e272e;
-    border: none;
-}
-
-.first-btn-row .cancel-btn:active,
-.first-btn-row .percentage-btn:active,
-.first-btn-row .ac-btn:active {
-    color: #d2dae2;
-    border: none;
-}
-
-.btn.operand, .btn.dot {
-    background: #485460;
+i {
+    font-size: 1.3rem;
 }
